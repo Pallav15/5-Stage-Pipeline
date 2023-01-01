@@ -1,0 +1,16 @@
+addi R4	R0 9
+lw R5 0(R0)
+add	R5 R5 R4
+and	R0 R2 R6
+or R4 R9 R10
+add R10 R12 R14
+beq R15 R13 br1
+addi R15 R12 5
+add R28 R25 R24
+br1: sll R20 R21 R26
+sw R30 0(R5)
+lw R16 0(R20)
+LOADNOC R5 R10 7
+STORENOC
+sra R30 R24 R30
+sll	R30 R31	R20
